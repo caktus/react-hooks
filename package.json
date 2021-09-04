@@ -2,7 +2,7 @@
   "name": "@caktus/react-hooks",
   "version": "1.0.0",
   "description": "A collection of react hooks by Caktus Group",
-  "author": "michael-caktus",
+  "author": "Caktus Group",
   "license": "MIT",
   "repository": "caktus/react-hooks",
   "main": "dist/index.js",
@@ -19,7 +19,9 @@
     "start": "rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "lint": "eslint --fix main.js",
+    "format": "prettier -w ."
   },
   "peerDependencies": {
     "react": "^16.9.0"
@@ -49,14 +51,17 @@
     "babel-eslint": "^10.0.1",
     "cross-env": "^5.2.0",
     "eslint": "5.16.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^2.0.1",
+    "prettier": "^2.3.2",
     "react": "^16.9.0",
     "react-scripts": "^3.4.0",
     "react-test-renderer": "^16.9.0",
